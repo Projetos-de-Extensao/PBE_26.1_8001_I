@@ -4,9 +4,12 @@ title: Pesquisa
 ---
 
 # Pesquisa
-## Pesquisa
-### Pesquisa
+## Contexto do Projeto
+A validação de contratos e relatórios de estágio em universidades é um processo fundamental para garantir conformidade com as normas institucionais e com a Lei do Estágio. Atualmente, essa atividade é realizada, em grande parte, de forma manual, o que pode gerar inconsistências, subjetividade e alto custo operacional.
 
-Pesquisa realizada para compreensão das principais características do Aplicativo de **Streaming**.
+Diante disso, surge a oportunidade de desenvolver um sistema automatizado para auxiliar na análise desses documentos, verificando a adequação das atividades realizadas pelos alunos durante o estágio e apoiando a tomada de decisão, com maior eficiência, rigor, e padronização.
 
-> Dorothy followed her through many of the beautiful rooms in her castle.
+## Objetivo
+
+## Público-Alvo
+
