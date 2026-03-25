@@ -13,4 +13,5 @@ Diante disso, surge a oportunidade de desenvolver um sistema automatizado para a
 Desenvolver um sistema capaz de validar contratos e relatórios de estágio de forma automatizada, verificando sua conformidade com as normas institucionais e com a Lei do Estágio (Lei nº 11.788/2008). O sistema deverá apoiar a análise das atividades realizadas pelos alunos, aumentar a padronização do processo e reduzir o esforço operacional envolvido na validação de documentos.
 
 ## Público-Alvo
+Os principais beneficiários do sistema seriam os coordenadores de curso, setores administrativos responsáveis pela gestão de estágios e docentes avaliadores, que atuam na validação de contratos e relatórios em universidades brasileiras. Porém indiretamente, o sistema também impacta estudantes e empresas concedentes, ao criar maior transparência, agilidade e padronização no processo de avaliação dos estágios.
 
