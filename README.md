@@ -24,6 +24,18 @@ Antes de instalar qualquer coisa, abra a Paleta de Comandos de novo e digite "Py
 
 ##### - Ative o Ambiente Virtual: No Windows, o comando é ".\venv\Scripts\activate"; no Mac/Linux, é "source venv/bin/activate". O PowerShell pode não permitir que o venv seja ativado. Mude para o CMD ou o GitBash. O GitBash já ativa automaticamente o Ambiente Virtual, é só abrir o terminal e esperar um pouco
 
-##### -
+##### - Atualizar o Banco de Dados: "python manage.py migrate". Importante: use o "cd" no terminal para ir até a pasta "djangotuutorial", onde está o arquivo manage.py. Caso contrário, o comando acima não funciona, nem o próximo
 
-**Pré-requisitos**: Ter pelo menos o Java Runtime Environment (JRE) e o Graphviz instalados para poder visualizar os diagramas de PlantUML
+##### - Iniciar o Servidor: "python manage.py runserver". Por padrão, o servidor se inicia em "http://127.0.0.1:8000/", mas isso é o de menos
+
+#### b) Mkdocs
+
+##### - Ative o Ambiente Virtual
+
+##### - Iniciar o Servidor de Documentação: "mkdocs serve". É preciso entrar na pasta "mkdocs" com "cd" antes de usar o comando
+
+#### OBS: Como o Django e o mkdocs escolhem a porta 8000, rodar os dois ao mesmo tempo pode dar problema. Para evitar isso, abra dois terminais (clique no ícone de + no painel do terminal) e use: Terminal 1 (Django): python manage.py runserver 8000; Terminal 2 (MkDocs): mkdocs serve -a localhost:8001
+
+## Diagramas
+
+A princípio, usaremos PlantUML, mas há uma pasta de diagramas dentro de mkdocs/docs onde diagramas de qualquer origem podem ser colocados. Para visualizar e criar os diagramas de PlantUML, é preciso ter o JRE ou o JDK instalado e o Graphviz
