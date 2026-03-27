@@ -112,7 +112,7 @@ theme:
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: deep orange
+      primary: deep purple
       accent: amber
       toggle:
         icon: material/toggle-switch-off
