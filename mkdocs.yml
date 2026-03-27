@@ -1,7 +1,7 @@
 ---
 repo_url: https://github.com/jonh-carvalho/PBE_25.2_8003
 site_author: Jonh Carvalho
-site_name: PBE_25.2_8003
+site_name: PBE_25.2_8001
 copyright: Copyright ©️ 2025, Jonh Carvalho
 docs_dir: mkdocs
 nav: 
@@ -39,7 +39,7 @@ nav:
   - Transição:
       - Index: Transicao/index.md
 
-  - Bibliografia: Disciplina/bibliografia.md
+
 
 extra_css:
   - css/extra.css
@@ -102,7 +102,7 @@ plugins:
 
 theme:
   name: material
-  logo: assets/ibmec_logo.png
+  logo: assets/logo-ibmec.png
   palette:
     
     - media: "(prefers-color-scheme)"
