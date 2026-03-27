@@ -4,7 +4,7 @@
 
 ## Sobre
 
-Projeto de validação de vagas de estágio
+Repositório do Grupo 1 de PBE 2026.1, turma 8001, incluindo: Marcos, Maurício, Micael, Bruno e Christian
 
 ## Configurando o Ambiente
 
