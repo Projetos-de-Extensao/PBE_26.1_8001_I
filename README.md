@@ -60,8 +60,6 @@ Por padrão, o servidor se inicia em `http://127.0.0.1:8000/`
 
 ##### - Iniciar o Servidor de Documentação
 
-É preciso entrar na pasta `mkdocs` com `cd` antes de usar o comando:
-
 ```bash
 mkdocs serve
 ```
