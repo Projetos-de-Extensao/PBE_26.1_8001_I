@@ -2,28 +2,18 @@
 hide:
   - navigation
   - toc
----  
+---
 
-# PBE_25.2_8001
+# PBE_26.1_8001
 
 <div class="grid cards" markdown>
 
--   :material-github:{ .lg .right } __PBE_25.21_8003_I__
+- :material-github:{ .lg .right } **PBE_26.1_8001_I**
 
-    ---
+  ***
 
-    Lorem Ipsum     Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+  Repositório do grupo 1: Marcos, Maurício, Micael, Bruno e Christian
 
-    [:octicons-arrow-right-24: Repositório](https://github.com/Projetos-de-Extensao/PBE_25.2_8003_I)
-
--   :material-github:{ .lg .middle } __PBE_25.2_8003_II__
-
-    ---
-
-    Lorem Ipsum Lorem Ipsum Lorem Ipsum
-
-    [:octicons-arrow-right-24: Repositório](https://github.com/Projetos-de-Extensao/PBE_25.2_8003_II)
-
+  [:octicons-arrow-right-24: Repositório](https://github.com/Projetos-de-Extensao/PBE_26.1_8001_I)
 
 </div>
-
