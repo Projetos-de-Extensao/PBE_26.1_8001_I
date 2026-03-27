@@ -25,11 +25,13 @@ Antes de instalar qualquer coisa, abra a Paleta de Comandos de novo e digite `Py
 ##### - Ative o Ambiente Virtual
 
 No Windows:
+
 ```bash
 .\venv\Scripts\activate
 ```
 
 No Mac/Linux:
+
 ```bash
 source venv/bin/activate
 ```
@@ -69,11 +71,13 @@ mkdocs serve
 Como o Django e o MkDocs escolhem a porta 8000, rodar os dois ao mesmo tempo pode dar problema. Para evitar isso, abra dois terminais (clique no ícone de `+` no painel do terminal) e use:
 
 Terminal 1 (Django):
+
 ```bash
 python manage.py runserver 8000
 ```
 
 Terminal 2 (MkDocs):
+
 ```bash
 mkdocs serve -a localhost:8001
 ```
