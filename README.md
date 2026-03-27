@@ -4,7 +4,7 @@
 
 ## Sobre
 
-Repositório do Grupo 1 de PBE 2026.1, turma 8001, incluindo: Marcos, Maurício, Micael, Bruno e Christian
+Repositório do Grupo 1 de PBE 2026.1, turma 8001, incluindo: Gianluca, Marcos, Maurício, Micael, Bruno e Christian
 
 ## Configurando o Ambiente
 
