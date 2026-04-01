@@ -10,7 +10,7 @@ O brainstorm é uma técnica de elicitação de requisitos que consiste em reuni
  
 ## Metodologia
 <p align = "justify">
-A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .... e terminou..., onde o XXXX XXXX foi o moderador, direcionando a equipe com questões pré-elaboradas, e transcrevendo as respostas para o documento.
+A equipe se reuniu para debater ideias gerais no 01/04/2026 sobre o projeto via Discord, começou 19:30 e terminou..., onde Christian e Gianluca foram os moderadores, direcionando a equipe com questões pré-elaboradas, e transcrevendo as respostas para o documento.
 </p>
  
 ## Brainstorm
@@ -22,50 +22,39 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .
 ### 1. Qual o objetivo principal da aplicação?
  
 <p align = "justify">
-<b>XXXX</b> - Deve ser uma plataforma onde qualquer pessoa possa...
+<b>Christian</b> - Deve ser uma plataforma onde estudantes do ibmec possam enviar documentos para que seja feita a validação de contratos e relátorios de estágio.
 </p>
  
-<b>ZZZ</b> - A plataforma deve fornece...
+<b>Gianluca</b> - A plataforma deve fornecer uma validação automática dos documentos.
  
-<b>YYYY</b> - O objetivo da aplicação é....
- 
-<b>WWWW</b> - O principal objetivo da aplicação é a...
- 
-<b>KKKK</b> - A plataforma deve gerenciar...
+<b>Bruno</b> - O principal objetivo da aplicação é facilitar validação de estagio para ambos os alunos e coordenadores, agilizando o processo.
 </p>
  
 ---
  
-### 2. Como será o processo para cadastrar um novo cliente?
+### 2. Como será o processo de envio de documentos?
  
 <p align = "justify">
-<b>XXXX</b> - O moderador deverá fazer login e...
+<b>Bruno</b> - O aluno deve abrir uma solicitação indicando seu curso e campus.
  
-<b>YYYY</b> - O cliente...
- 
-<b>WWWW</b> - Com o usuário logado, ele deverá...
+<b>Christian</b> - O aplicativo deverá indicar quais documentos são necessários do curso específico do aluno.
 
-<b>ZZZZ</b> - O cliente...
+<b>Christian</b> - O aplicativo deve fornecer ao aluno, modelos dos documentos a serem enviados.
  
-<b>KKK</b> - O cliente...
- 
+<b>Gianluca</b> - O aluno deverá enviar todos os documentos solicitados pelo aplicativo.
+
 ---
  
-### 3. Como será a forma de adicionar produtos?
+### 3. Como será feito o acesso para alunos e coordenadores?
  
 <p align = "justify">
-<b>XXXX</b> - O cliente ao cadastrar...
+<b>Gianluca</b> - O Login deve ser feito pelo email da instituição, para ambos aluno e coordenador.
 </p>
  
 <p align = "justify">
-<b>YYYYY</b> - O produto tem...
+<b>Bruno</b> - A interface do aluno e do coordenador deverão ser diferentes, onde o aluno poderá apenas mandar solicitações/documentos e o coordenador poderá visualizar todas as solicitações feitas por estudantes de seu curso.
 </p>
- 
-<b>ZZZZ</b> - O produto....
- 
-<b>XXXX</b> - O produto....
 
- 
 ---
  
 ### 4. Outras perguntas pertinentes ao contexto
