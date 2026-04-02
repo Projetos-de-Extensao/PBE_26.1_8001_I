@@ -63,6 +63,8 @@ A equipe se reuniu para debater ideias gerais no 01/04/2026 sobre o projeto via 
 <b>Cristian</b> - A avaliação será feita por uma inteligência artificial que seguirá as Leis do Estágio, as Leis do Trabalho e também seguindo as normas no mec.
  
 <b>Bruno</b> - A inteligência artificial deverá verificar a porcentagem de validez de cada contrato a fim de alertar o coordenador, para que ele faça a validação manual.
+
+---
  
 ### 5. Quais as funções do coordenador na plataforma?
 <p align = "justify">
@@ -72,45 +74,48 @@ A equipe se reuniu para debater ideias gerais no 01/04/2026 sobre o projeto via 
 <p align = "justify">
 <b>Bruno</b> - O coordenador pode fazer alterações nos documentos modelos caso haja necessidade.
 </p>
+
+---
  
 ### 6. Quando e como os estudantes recebem a verifição dos documentos?
 <p align = "justify">
    <b>Gianluca</b> - Após a validação, o coordenador do curso deve assinar os documentos e logo depois mandar para a reitoria para que ela assine.
    
    <b>Cristian</b> - A cada etapa do processo o estudante é notificado pelo aplicativo e e-mail.
-
 </p>
- 
-### Requisitos elicitados
- 
-|ID|Descrição|
-|----|-------------|
-|BS01| O cliente...|
-|BS02| O cliente...|
-|BS03| O cliente...|
-|BS04| O cliente...|
-|BS05| O cliente...|
-|BS06| O cliente...|
-|BS07| O cliente...|
-|BS08| O cliente...|
-|BS09| O cliente...|
-|BS10| O produto...|
-|BS11| O produto...|
-|BS12| O produto...|
-|BS13| O produto...|
-|BS14| O produto...|
-|BS15| O produto...|
+
+---
+
+## 1. Elicitação de Requisitos 
+ A partir das definições do brainstorm, foram derivados os seguintes requisitos técnicos: 
+  ### 1. 1 Requisitos Funcionais (RF)
+| ID | Requisito | Descrição |
+|:---|:---|:---| 
+| **RF01** | Autenticação Institucional | O login deve ser restrito ao e-mail institucional (@ibmec). |
+| **RF02** | Perfis de Usuário | O sistema deve distinguir entre permissões de Aluno e Coordenador. |
+| **RF03** | Abertura de Solicitação | O aluno deve selecionar Curso e Campus ao iniciar o processo. |
+| **RF04** | Check-list Dinâmico | Exibir documentos obrigatórios conforme o curso selecionado. |
+| **RF05** | Repositório de Modelos | Disponibilizar download de templates oficiais para os alunos. |
+| **RF06** | Upload de Documentos | Permitir o envio de arquivos para a plataforma. |
+| **RF07** | Análise por IA | Processar documentos automaticamente via Inteligência Artificial. |
+| **RF08** | Score de Validez | Exibir indicador percentual de conformidade do documento. |
+| **RF09** | Gestão de Fluxo | Permitir ao coordenador assinar e encaminhar para a reitoria. |
+| **RF10** | Notificações | Enviar alertas automáticos por e-mail e push a cada mudança de status. |
+### 1.2 Requisitos Não Funcionais (RNF)
+| ID | Requisito | Categoria | Descrição |
+|:---|:---|:---|:---|
+| **RNF01** | Conformidade Legal | Regra de Negócio | A IA deve seguir estritamente as leis de estágio e normas do MEC. |
+| **RNF02** | Segurança | Acesso | A integração com o e-mail institucional deve ser segura e criptografada. |
+| **RNF03** | Usabilidade | Interface | A interface deve ser intuitiva, separando claramente as visões de aluno e docente. |
+| **RNF04** | Escalabilidade | Desempenho | O sistema deve suportar o processamento simultâneo de múltiplos documentos. |  
+
  
 ## Conclusão
 <p align = "justify">
 Através da aplicação da técnica, foi possível elicitar alguns dos primeiros requisitos do projeto.
 </p>
-## Referências Bibliográficas
- 
-> BARBOSA, S. D. J; DA SILVA, B. S. Interação humano-computador. Elsevier, 2010.
- 
  
 ## Autor(es)
 | Data | Versão | Descrição | Autor(es) |
 | -- | -- | -- | -- |
-| DD/MM/YYYY | 1.0 | Criação do documento | XXX XXXX, XXXX XXXX, YYY YYYY e ZZZ XXXX |
+| 01/04/2026 | 1.0 | Criação de documeto | Bruno Norton, Christian Werneck, Gianluca Leonardi, Marcos Paulo Assunção, Maurício Gomes e Micael Dali |
