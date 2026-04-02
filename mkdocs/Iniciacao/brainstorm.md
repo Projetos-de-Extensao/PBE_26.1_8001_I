@@ -57,30 +57,28 @@ A equipe se reuniu para debater ideias gerais no 01/04/2026 sobre o projeto via 
 
 ---
  
-### 4. Outras perguntas pertinentes ao contexto
+### 4.  Como será feita a validação?
 
 <p align = "justify">
-<b>XXXX</b> - Com a localização...
+<b>Cristian</b> - A avaliação será feita por uma inteligência artificial que seguirá as Leis do Estágio, as Leis do Trabalho e também seguindo as normas no mec.
  
-<b>YYYY</b> - O cliente...
+<b>Bruno</b> - A inteligência artificial deverá verificar a porcentagem de validez de cada contrato a fim de alertar o coordenador, para que ele faça a validação manual.
  
-<b>ZZZ</b> - O cliente...
- 
----
- 
-### 5. "Outras perguntas pertinentes ao contexto", Como seria a forma de adicionar do cliente adicionar os produtos ?
+### 5. Quais as funções do coordenador na plataforma?
 <p align = "justify">
-<b>XXX</b> - O cliente....
+<b>Gianluca</b> - O coordenador terá a função de chegar às pedidos feitos pelos estudantes, além de poder validar manualmente os documentos caso o sistema apresente algum erro na validação.
+</p>
+
+<p align = "justify">
+<b>Bruno</b> - O coordenador pode fazer alterações nos documentos modelos caso haja necessidade.
 </p>
  
-### 6. Quais informações seriam interessante para o cliente?
+### 6. Quando e como os estudantes recebem a verifição dos documentos?
 <p align = "justify">
-   <b>XXX</b> - Informações...
+   <b>Gianluca</b> - Após a validação, o coordenador do curso deve assinar os documentos e logo depois mandar para a reitoria para que ela assine.
    
-   <b>ZZZZ</b> - O cliente usuário poderá acessar informações...
+   <b>Cristian</b> - A cada etapa do processo o estudante é notificado pelo aplicativo e e-mail.
 
-   <b>WWWWs</b> - O usuário poderá ver scouts de partidas do torneio, ver as regras dos torneios, locais e data das partidas.
-   
 </p>
  
 ### Requisitos elicitados
