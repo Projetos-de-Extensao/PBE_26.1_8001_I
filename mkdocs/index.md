@@ -12,7 +12,7 @@ hide:
 
     ---
 
-    Repositório do grupo 1: Marcos, Maurício, Micael, Bruno e Christian
+    Repositório do grupo 1: Marcos, Maurício, Micael, Bruno, Christian e Gianluca
 
     [:octicons-arrow-right-24: Repositório](https://github.com/Projetos-de-Extensao/PBE_26.1_8001_I)
 

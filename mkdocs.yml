@@ -6,18 +6,10 @@ copyright: Copyright ©️ 2025, Jonh Carvalho
 docs_dir: mkdocs
 nav:
   - Home: index.md
-  - Disciplina:
-      - Aulas: Disciplina/aulas.md
-      - Ambiente: Disciplina/ambiente.md
-      - Github: Disciplina/github.md
-      - Mkdocs: Disciplina/mkdocs.md
-      - CodeSpace: Disciplina/codespace.md
-      - Avaliações: Disciplina/avaliacoes.md
   - Iniciação:
       - Index: Iniciacao/index.md
       - Pesquisa: Iniciacao/pesquisa.md
       - 5w2h: Iniciacao/5w2h.md
-      - Design Thinking: Iniciacao/design_thinking.md
       - Brainstorming: Iniciacao/brainstorm.md
       - Mapa Mental: Iniciacao/mapa_mental.md
       - Prototipagem Baixa Fidelidade: Iniciacao/prototipo_baixa_fidelidade.md
