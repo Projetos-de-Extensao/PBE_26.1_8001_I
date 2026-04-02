@@ -10,7 +10,7 @@ O brainstorm é uma técnica de elicitação de requisitos que consiste em reuni
  
 ## Metodologia
 <p align = "justify">
-A equipe se reuniu para debater ideias gerais no 01/04/2026 sobre o projeto via Discord, começou 19:30 e terminou..., onde Christian e Gianluca foram os moderadores, direcionando a equipe com questões pré-elaboradas, e transcrevendo as respostas para o documento.
+A equipe se reuniu para debater ideias gerais no 01/04/2026 sobre o projeto via Discord, começou 19:30 e terminou 21:20, onde Christian e Gianluca foram os moderadores, direcionando a equipe com questões pré-elaboradas, e transcrevendo as respostas para o documento.
 </p>
  
 ## Brainstorm
@@ -60,7 +60,7 @@ A equipe se reuniu para debater ideias gerais no 01/04/2026 sobre o projeto via 
 ### 4.  Como será feita a validação?
 
 <p align = "justify">
-<b>Cristian</b> - A avaliação será feita por uma inteligência artificial que seguirá as Leis do Estágio, as Leis do Trabalho e também seguindo as normas no mec.
+<b>Christian</b> - A avaliação será feita por uma inteligência artificial que seguirá as Leis do Estágio, as Leis do Trabalho e também seguindo as normas no mec.
  
 <b>Bruno</b> - A inteligência artificial deverá verificar a porcentagem de validez de cada contrato a fim de alertar o coordenador, para que ele faça a validação manual.
 
@@ -81,7 +81,7 @@ A equipe se reuniu para debater ideias gerais no 01/04/2026 sobre o projeto via 
 <p align = "justify">
    <b>Gianluca</b> - Após a validação, o coordenador do curso deve assinar os documentos e logo depois mandar para a reitoria para que ela assine.
    
-   <b>Cristian</b> - A cada etapa do processo o estudante é notificado pelo aplicativo e e-mail.
+   <b>Christian</b> - A cada etapa do processo o estudante é notificado pelo aplicativo e e-mail.
 </p>
 
 ---
