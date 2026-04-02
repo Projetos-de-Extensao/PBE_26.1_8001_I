@@ -4,14 +4,10 @@ title: Brainstorm
 ---
  
 ## Introdução
-<p align = "justify">
 O brainstorm é uma técnica de elicitação de requisitos que consiste em reunir a equipe e discutir sobre diversos tópicos gerais do projeto apresentados no documento problema de negócio. No brainstorm o diálogo é incentivado e críticas são evitadas para permitir que todos colaborem com suas próprias ideias.
-</p>
  
 ## Metodologia
-<p align = "justify">
 A equipe se reuniu para debater ideias gerais no 01/04/2026 sobre o projeto via Discord, começou 19:30 e terminou 21:20, onde Christian e Gianluca foram os moderadores, direcionando a equipe com questões pré-elaboradas, e transcrevendo as respostas para o documento.
-</p>
  
 ## Brainstorm
  
@@ -21,74 +17,48 @@ A equipe se reuniu para debater ideias gerais no 01/04/2026 sobre o projeto via 
  
 ### 1. Qual o objetivo principal da aplicação?
  
-<p align = "justify">
-<b>Christian</b> - Deve ser uma plataforma onde estudantes do ibmec possam enviar documentos para que seja feita a validação de contratos e relátorios de estágio.
-</p>
+**Christian** - Deve ser uma plataforma onde estudantes do ibmec possam enviar documentos para que seja feita a validação de contratos e relátorios de estágio.
+
+**Gianluca** - A plataforma deve fornecer uma validação automática dos documentos.
  
-<b>Gianluca</b> - A plataforma deve fornecer uma validação automática dos documentos.
- 
-<b>Bruno</b> - O principal objetivo da aplicação é facilitar validação de estagio para ambos os alunos e coordenadores, agilizando o processo.
-</p>
- 
----
+**Bruno* - O principal objetivo da aplicação é facilitar validação de estagio para ambos os alunos e coordenadores, agilizando o processo.
  
 ### 2. Como será o processo de envio de documentos?
  
-<p align = "justify">
-<b>Bruno</b> - O aluno deve abrir uma solicitação indicando seu curso e campus.
+**Bruno** - O aluno deve abrir uma solicitação indicando seu curso e campus.
  
-<b>Christian</b> - O aplicativo deverá indicar quais documentos são necessários do curso específico do aluno.
+**Christian** - O aplicativo deverá indicar quais documentos são necessários do curso específico do aluno.
 
-<b>Christian</b> - O aplicativo deve fornecer ao aluno, modelos dos documentos a serem enviados.
+**Christian** - O aplicativo deve fornecer ao aluno, modelos dos documentos a serem enviados.
  
-<b>Gianluca</b> - O aluno deverá enviar todos os documentos solicitados pelo aplicativo.
-
----
+**Gianluca** - O aluno deverá enviar todos os documentos solicitados pelo aplicativo.
  
 ### 3. Como será feito o acesso para alunos e coordenadores?
  
-<p align = "justify">
-<b>Gianluca</b> - O Login deve ser feito pelo email da instituição, para ambos aluno e coordenador.
-</p>
+**Gianluca** - O Login deve ser feito pelo email da instituição, para ambos aluno e coordenador.
  
-<p align = "justify">
-<b>Bruno</b> - A interface do aluno e do coordenador deverão ser diferentes, onde o aluno poderá apenas mandar solicitações/documentos e o coordenador poderá visualizar todas as solicitações feitas por estudantes de seu curso.
-</p>
-
----
+**Bruno** - A interface do aluno e do coordenador deverão ser diferentes, onde o aluno poderá apenas mandar solicitações/documentos e o coordenador poderá visualizar todas as solicitações feitas por estudantes de seu curso.
  
 ### 4.  Como será feita a validação?
 
-<p align = "justify">
-<b>Christian</b> - A avaliação será feita por uma inteligência artificial que seguirá as Leis do Estágio, as Leis do Trabalho e também seguindo as normas no mec.
+**Christian** - A avaliação será feita por uma inteligência artificial que seguirá as Leis do Estágio, as Leis do Trabalho e também seguindo as normas no mec.
  
-<b>Bruno</b> - A inteligência artificial deverá verificar a porcentagem de validez de cada contrato a fim de alertar o coordenador, para que ele faça a validação manual.
-
----
+**Bruno** - A inteligência artificial deverá verificar a porcentagem de validez de cada contrato a fim de alertar o coordenador, para que ele faça a validação manual.
  
 ### 5. Quais as funções do coordenador na plataforma?
-<p align = "justify">
-<b>Gianluca</b> - O coordenador terá a função de chegar às pedidos feitos pelos estudantes, além de poder validar manualmente os documentos caso o sistema apresente algum erro na validação.
-</p>
+**Gianluca** - O coordenador terá a função de chegar às pedidos feitos pelos estudantes, além de poder validar manualmente os documentos caso o sistema apresente algum erro na validação.
 
-<p align = "justify">
-<b>Bruno</b> - O coordenador pode fazer alterações nos documentos modelos caso haja necessidade.
-</p>
-
----
+**Bruno** - O coordenador pode fazer alterações nos documentos modelos caso haja necessidade.
  
 ### 6. Quando e como os estudantes recebem a verifição dos documentos?
-<p align = "justify">
-   <b>Gianluca</b> - Após a validação, o coordenador do curso deve assinar os documentos e logo depois mandar para a reitoria para que ela assine.
+   **Gianluca** - Após a validação, o coordenador do curso deve assinar os documentos e logo depois mandar para a reitoria para que ela assine.
    
-   <b>Christian</b> - A cada etapa do processo o estudante é notificado pelo aplicativo e e-mail.
-</p>
-
----
+   **Christian** - A cada etapa do processo o estudante é notificado pelo aplicativo e e-mail.
 
 ## 1. Elicitação de Requisitos 
  A partir das definições do brainstorm, foram derivados os seguintes requisitos técnicos: 
-  ### 1. 1 Requisitos Funcionais (RF)
+
+### 1. 1 Requisitos Funcionais (RF)
 | ID | Requisito | Descrição |
 |:---|:---|:---| 
 | **RF01** | Autenticação Institucional | O login deve ser restrito ao e-mail institucional (@ibmec). |
@@ -101,6 +71,7 @@ A equipe se reuniu para debater ideias gerais no 01/04/2026 sobre o projeto via 
 | **RF08** | Score de Validez | Exibir indicador percentual de conformidade do documento. |
 | **RF09** | Gestão de Fluxo | Permitir ao coordenador assinar e encaminhar para a reitoria. |
 | **RF10** | Notificações | Enviar alertas automáticos por e-mail e push a cada mudança de status. |
+
 ### 1.2 Requisitos Não Funcionais (RNF)
 | ID | Requisito | Categoria | Descrição |
 |:---|:---|:---|:---|
@@ -109,11 +80,8 @@ A equipe se reuniu para debater ideias gerais no 01/04/2026 sobre o projeto via 
 | **RNF03** | Usabilidade | Interface | A interface deve ser intuitiva, separando claramente as visões de aluno e docente. |
 | **RNF04** | Escalabilidade | Desempenho | O sistema deve suportar o processamento simultâneo de múltiplos documentos. |  
 
- 
 ## Conclusão
-<p align = "justify">
 Através da aplicação da técnica, foi possível elicitar alguns dos primeiros requisitos do projeto.
-</p>
  
 ## Autor(es)
 | Data | Versão | Descrição | Autor(es) |
