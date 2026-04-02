@@ -4,9 +4,11 @@ title: Brainstorm
 ---
  
 ## Introdução
+
 O brainstorm é uma técnica de elicitação de requisitos que consiste em reunir a equipe e discutir sobre diversos tópicos gerais do projeto apresentados no documento problema de negócio. No brainstorm o diálogo é incentivado e críticas são evitadas para permitir que todos colaborem com suas próprias ideias.
  
 ## Metodologia
+
 A equipe se reuniu para debater ideias gerais no 01/04/2026 sobre o projeto via Discord, começou 19:30 e terminou 21:20, onde Christian e Gianluca foram os moderadores, direcionando a equipe com questões pré-elaboradas, e transcrevendo as respostas para o documento.
  
 ## Brainstorm
