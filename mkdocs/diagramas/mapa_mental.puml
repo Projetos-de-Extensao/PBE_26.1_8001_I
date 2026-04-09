@@ -1,40 +1,75 @@
+@startmindmap
+<style>
+mindmapDiagram {
+    .projeto {
+        BackgroundColor #1a237e
+        FontColor white
+        FontSize 18
+    }
+    .visao {
+        BackgroundColor #e3f2fd
+    }
+    .requisitos {
+        BackgroundColor #fff3e0
+    }
+    .metodo {
+        BackgroundColor #f1f8e9
+    }
+    .legal {
+        BackgroundColor #fce4ec
+    }
+}
+</style>
 
-@startmindmap mapamental
-* **Sistema de Validação de Estágios Ibmec**
-** **Objetivo Principal**
-*** Plataforma para validar contratos e relatórios de estágio
-*** Agilizar o processo para alunos e coordenadores
-*** Validação automática com IA
-** **Usuários**
-*** **Alunos**
-**** Acesso com e-mail institucional
-**** Envio de documentos
-**** Acompanhamento do processo
-**** Acesso a modelos de documentos
-*** **Coordenadores**
-**** Acesso com e-mail institucional
-**** Visualização de solicitações
-**** Validação manual
-**** Gestão de modelos de documentos
-** **Funcionalidades Chave**
-*** Autenticação Institucional (@ibmec)
-*** Upload de Documentos
-**** Seleção de curso e campus
-**** Checklist dinâmico de documentos
-*** Análise por IA
-**** Conformidade com a Lei do Estágio
-**** Conformidade com a CLT
-**** Conformidade com normas do MEC
-**** Geração de score de validez
-*** Notificações
-**** E-mail e push
-**** A cada etapa do processo
-*** Assinatura Digital
-**** GOV.BR
-**** ICP-Brasil
-** **Base Legal e Normativa**
-*** Lei do Estágio (Lei nº 11.788/2008)
-*** Legislação Trabalhista (CLT)
-*** Normas do MEC
-*** Diretrizes do Ibmec
+* **Sistema de Validação de Estágios (Ibmec)** <<projeto>>
+
+** Visão Geral <<visao>>
+***_ Objetivo: Automatizar com IA e reduzir esforço
+***_ Problema: Validação manual e inconsistência
+***_ Escopo: Ciclo de envio, triagem e notificações
+***_ Fora de Escopo: Gestão financeira e ponto
+
+** Brainstorm e Requisitos <<requisitos>>
+*** Fluxo do Aluno
+****_ Checklist dinâmico e Modelos oficiais
+****_ Acompanhamento de status
+*** Fluxo do Coordenador
+****_ Validação manual/híbrida
+****_ Assinatura e encaminhamento
+*** RFs Críticos
+****_ **RF07** Análise por IA
+****_ **RF08** Score de conformidade
+****_ **RF01** Autenticação institucional
+
+** Benefícios Esperados <<visao>>
+***_ Agilidade e Transparência
+***_ Confiabilidade Jurídica
+***_ Experiência do Aluno/Coordenador
+
+left side
+
+** 5W2H <<metodo>>
+*** What: Sistema integrado administrativo
+*** Why: Otimizar validação de contratos
+*** Who: Equipe Back-end
+*** How: RUP/UP + Ferramentas Web
+
+** Base Legal e Normativa <<legal>>
+***_ **Lei 11.788/2008** (Assinatura Tripartite)
+***_ Limites: 6h/dia e 30h/semana
+***_ Relatório semestral obrigatório
+***_ Processo 100% digital (Ibmec)
+
+** Metodologia <<metodo>>
+*** Estrutura
+****_ RUP/UP + Kanban
+****_ Django
+*** Design Thinking
+****_ Empatia -> Ideação -> Protótipo
+
+** Entregáveis <<metodo>>
+***_ Documento de Visão
+***_ Protótipo de Baixa Fidelidade
+***_ Pesquisa de Mercado
+
 @endmindmap
