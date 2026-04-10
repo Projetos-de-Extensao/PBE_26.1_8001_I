@@ -12,7 +12,7 @@ Mapa mental consiste em criar resumos cheios de símbolos, cores, setas e frases
 ## Metodologia
  
 <p align = "justify">
-Foi levantado um ponto importante sobre o app e, assim, foi produzido o mapa mental. O documento foi produzido utilizando a ferramenta...
+Usamos o mapa mental para demonstrar o que foi feito até agora (Pesquisas de legislação, qual metodologias foram usadas, definição do nosso 5W2H) e para representar o que deve ser feito em relação ao software e o porquê cada coisa deve ser feita. Usamos PlantUML pela facilidade de integração ao MkDocs e pela qualidade de representação do mapa mental.
 </p>
  
 ## Mapa mental:
@@ -99,18 +99,16 @@ left side
 ## Conclusão
  
 <p align = "justify">
-O mapa mental é uma ficha de estudos que ajuda a dar uma visão geral do tema, e ajuda a fixar os pontos mais importantes sobre o app.
+Com esse mapa mental montado, sabemos o caminho a ser seguido e quais direções o projeto deve tomar.
 </p>
  
 ## Referências
-> Mapa MentalXXX,  Disponível em: https://www.....
- 
-> Ferramentas para Mapas Mentais. Disponível em: https://www....
- 
-> Plataforma para usuários colaborar no desenho... Disponível em: https://...
- 
+
+> PlantUML para Mapas Mentais. Disponível em: https://plantuml.com/mindmap-diagram
+
+
 ## Versionamento
 | Data | Versão | Descrição | Autor(es) |
 | -- | -- | -- | -- |
-| dd/mm/yy | 1.0 | Criação do documento | xxx xxxx |
-| dd/mm/yy | 2.0 | Adicionado Mapa mental 2 | xxxx xxxx |
+| 09/04/2026 | 1.0 | Criação de documento | Bruno Norton, Christian Werneck, Gianluca Leonardi, Marcos Paulo Assunção, Maurício Gomes e Micael Dali |
+

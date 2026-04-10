@@ -241,3 +241,4 @@ O processo utiliza **exclusivamente assinaturas eletrônicas** (como DocuSign):
 
 ---
 
+| 23/03/2026 | 1.0 | Criação de documento | Bruno Norton, Christian Werneck, Gianluca Leonardi, Marcos Paulo Assunção, Maurício Gomes e Micael Dali |
