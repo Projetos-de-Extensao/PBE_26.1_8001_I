@@ -36,12 +36,12 @@ Este protótipo de baixa fidelidade descreve a experiência básica da aplicaç�
 title Login - Sistema de Validação de Estágios
 
 {
-  [IBMEC | Sistema de Validação de Estágio]
+  **IBMEC Sistema de Validação de Estágio**
   --
-  [Email institucional]
-  [Senha]
-  [Entrar]
-  [Esqueci a senha?]
+  "Email institucional"
+  "Senha"
+  "Entrar"
+  [Esqueceu a senha?]
   --
   [Aluno]
   [Coordenador]
@@ -56,26 +56,38 @@ title Login - Sistema de Validação de Estágios
 title Dashboard do Aluno - Solicitações
 
 {
-  hbox
-  {
-    vbox
-    {
-      [Nova Solicitação]
+  {+
+    Olá, Aluno!
+    {+
+    --
+      [**Nova Solicitação**]
+      --
       [Modelos de Documentos]
       [Meu Perfil]
+      [Notificações]
+      [Tarefas pendentes: 2]
     }
     --
-    vbox
-    {
-      [Solicitação 001]
-      [Status: Em análise]
-      [Score: 78%]
-      [Última atualização: 21/04/2026]
+    **Suas Solicitações**
+    --
+    {+
+      **Solicitação 001**
+      {-
+        **Status:** Em análise
+        **Score:** 78%
+        **Última atualização:** 21/04/2026
+      }
+    }
+    --
+    {+
+      **Solicitação 002**
+      {-
+        **Status:** Em análise
+        **Score:** 78%
+        **Última atualização:** 21/04/2026
+      }
     }
   }
-  --
-  [Notificações]
-  [Tarefas pendentes: 2]
 }
 @endsalt
 ```
@@ -87,9 +99,9 @@ title Dashboard do Aluno - Solicitações
 title Nova Solicitação de Validação - Aluno
 
 {
-  [Curso]
-  [Campus]
-  [Tipo de Estágio]
+  "Curso"
+  "Campus"
+  "Tipo de Estágio"
   --
   [Checklist Dinâmico]
   [Contrato de Estágio]
@@ -98,7 +110,7 @@ title Nova Solicitação de Validação - Aluno
   --
   [Upload de Documentos]
   [Enviar Solicitação]
-  [Cancelar]
+  [<&circle-x>Cancelar]
 }
 @endsalt
 ```
@@ -110,15 +122,23 @@ title Nova Solicitação de Validação - Aluno
 title Painel do Coordenador - Solicitações Pendentes
 
 {
-  [Filtro: Curso]
-  [Filtro: Status]
-  [Buscar]
+  {+
+  **Solicitações Pendentes**
   --
-  [Solicitação #123 | Aluno: Ana Silva | Score: 65% | Revisar]
-  [Solicitação #124 | Aluno: Pedro Souza | Score: 92% | Revisar]
-  --
-  [Solicitações abertas: 8]
-  [Pendentes de assinatura: 3]
+    [**Filtro:** Curso]  
+    [**Filtro:** Status]
+    [Buscar]
+    --
+    {+
+      {-
+      Solicitação #123 | Aluno: Ana Silva | Score: 65% | Revisar
+      Solicitação #124 | Aluno: Pedro Souza | Score: 92% | Revisar
+      }
+    }
+    --
+    **Solicitações abertas:** 8
+    **Pendentes de assinatura:** 3
+  }
 }
 @endsalt
 ```
@@ -130,17 +150,19 @@ title Painel do Coordenador - Solicitações Pendentes
 title Detalhes da Solicitação - Coordenador
 
 {
-  [Aluno: Ana Silva]
-  [Curso: Sistemas de Informação]
-  [Campus: Asa Norte]
-  [Status: Em validação]
+  {+
+  **Aluno:** Ana Silva
+  **Curso:** Sistemas de Informação
+  **Campus:** Asa Norte
+  **Status:** Em validação
   --
-  [Score IA: 78%]
-  [Documentos aceitos: 4/5]
-  [Comentário da IA: Assinatura ausente no contrato]
+  **Score IA:** 78%
+  **Documentos aceitos:** 4/5
+  **Comentário da IA:** Assinatura ausente no contrato
   --
-  [Aprovar]
-  [Reprovar]
+  }
+  [<&check>Aprovar]
+  [<&circle-x>Reprovar]
   [Encaminhar para Reitoria]
   [Solicitar retificação]
 }
