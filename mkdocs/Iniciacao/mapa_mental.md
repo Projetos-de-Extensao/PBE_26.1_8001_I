@@ -38,59 +38,57 @@ mindmapDiagram {
     .legal {
         BackgroundColor #fce4ec
     }
+    .fluxos {
+        BackgroundColor #ede4d7
+    }
 }
 </style>
 
 * **Sistema de Validação de Estágios (Ibmec)** <<projeto>>
-
 ** Visão Geral <<visao>>
-***_ Objetivo: Automatizar com IA e reduzir esforço
-***_ Problema: Validação manual e inconsistência
-***_ Escopo: Ciclo de envio, triagem e notificações
-***_ Fora de Escopo: Gestão financeira e ponto
+*** Objetivo: Automatizar com IA e reduzir esforço
+*** Problema: Validação manual e inconsistência
+*** Escopo: Ciclo de envio, triagem e notificações
+*** Fora de Escopo: Gestão financeira e ponto
 
 ** Brainstorm e Requisitos <<requisitos>>
-*** Fluxo do Aluno
-****_ Checklist dinâmico e Modelos oficiais
-****_ Acompanhamento de status
-*** Fluxo do Coordenador
-****_ Validação manual/híbrida
-****_ Assinatura e encaminhamento
-*** RFs Críticos
-****_ **RF07** Análise por IA
-****_ **RF08** Score de conformidade
-****_ **RF01** Autenticação institucional
+*** Fluxo do Aluno <<fluxos>>
+**** Checklist dinâmico e Modelos oficiais
+**** Acompanhamento de status
+*** Fluxo do Coordenador <<fluxos>>
+**** Validação manual/híbrida
+**** Assinatura e encaminhamento
+*** RFs Críticos <<fluxos>>
+**** **RF07** Análise por IA
+**** **RF08** Score de conformidade
+**** **RF01** Autenticação institucional
 
 ** Benefícios Esperados <<visao>>
-***_ Agilidade e Transparência
-***_ Confiabilidade Jurídica
-***_ Experiência do Aluno/Coordenador
+*** Agilidade e Transparência
+*** Confiabilidade Jurídica
+*** Experiência do Aluno/Coordenador
 
 left side
 
 ** 5W2H <<metodo>>
-*** What: Sistema integrado administrativo
-*** Why: Otimizar validação de contratos
-*** Who: Equipe Back-end
-*** How: RUP/UP + Ferramentas Web
-
-** Base Legal e Normativa <<legal>>
-***_ **Lei 11.788/2008** (Assinatura Tripartite)
-***_ Limites: 6h/dia e 30h/semana
-***_ Relatório semestral obrigatório
-***_ Processo 100% digital (Ibmec)
-
-** Metodologia <<metodo>>
-*** Estrutura
-****_ RUP/UP + Kanban
-****_ Django
-*** Design Thinking
-****_ Empatia -> Ideação -> Protótipo
+*** **What**: Sistema integrado administrativo
+*** **Where**: Ibmec
+*** **When**: Durante o semestre 2026.1
+*** **Why**: Otimizar validação de contratos
+*** **Who**: Equipe Back-end
+*** **How**: RUP/UP, Django
+*** **How much**: Tempo e esforço da equipe
 
 ** Entregáveis <<metodo>>
-***_ Documento de Visão
-***_ Protótipo de Baixa Fidelidade
-***_ Pesquisa de Mercado
+*** Documento de Visão
+*** Protótipo de Baixa Fidelidade
+*** Pesquisa de Mercado
+
+** Base Legal e Normativa <<legal>>
+*** **Lei 11.788/2008** (Assinatura Tripartite)
+*** Limites: 6h/dia e 30h/semana
+*** Relatório semestral obrigatório
+*** Processo 100% digital (Ibmec)
 
 @enduml
 ```
