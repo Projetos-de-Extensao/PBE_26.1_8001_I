@@ -12,7 +12,7 @@ Mapa mental consiste em criar resumos cheios de símbolos, cores, setas e frases
 ## Metodologia
  
 <p align = "justify">
-Usamos o mapa mental para demonstrar o que foi feito até agora (Pesquisas de legislação, qual metodologias foram usadas, definição do nosso 5W2H) e para representar o que deve ser feito em relação ao software e o porquê cada coisa deve ser feita. Usamos PlantUML pela facilidade de integração ao MkDocs e pela qualidade de representação do mapa mental.
+Usamos o mapa mental para demonstrar o que foi feito até agora (Pesquisas de legislação, quais metodologias foram usadas, definição do nosso 5W2H) e para representar o que deve ser feito em relação ao software e o porquê cada coisa deve ser feita. Usamos PlantUML pela facilidade de integração ao MkDocs e pela qualidade de representação do mapa mental.
 </p>
  
 ## Mapa mental:
