@@ -2,9 +2,9 @@
 id: mapa_mental
 title: Mapas Mentais
 ---
- 
+
 ## Introdução
- 
+
 <p align = "justify">
 Mapa mental consiste em criar resumos cheios de símbolos, cores, setas e frases de efeito com o objetivo de organizar o conteúdo e facilitar associações entre as informações destacadas. Esse material é muito indicado para pessoas que têm facilidade de aprender de forma visual.
 </p>
@@ -43,6 +43,7 @@ mindmapDiagram {
     }
 }
 </style>
+
 
 * **Sistema de Validação de Estágios (Ibmec)** <<projeto>>
 ** Visão Geral <<visao>>
@@ -90,12 +91,11 @@ left side
 *** Relatório semestral obrigatório
 *** Processo 100% digital (Ibmec)
 
-@enduml
+@endmindmap
 ```
 
-
 ## Conclusão
- 
+
 <p align = "justify">
 Com esse mapa mental montado, sabemos o caminho a ser seguido e quais direções o projeto deve tomar.
 </p>
@@ -104,9 +104,8 @@ Com esse mapa mental montado, sabemos o caminho a ser seguido e quais direções
 
 > PlantUML para Mapas Mentais. Disponível em: https://plantuml.com/mindmap-diagram
 
-
 ## Versionamento
-| Data | Versão | Descrição | Autor(es) |
-| -- | -- | -- | -- |
-| 09/04/2026 | 1.0 | Criação de documento | Bruno Norton, Christian Werneck, Gianluca Leonardi, Marcos Paulo Assunção, Maurício Gomes e Micael Dali |
 
+| Data       | Versão | Descrição            | Autor(es)                                                                                               |
+| ---------- | ------ | -------------------- | ------------------------------------------------------------------------------------------------------- |
+| 09/04/2026 | 1.0    | Criação de documento | Bruno Norton, Christian Werneck, Gianluca Leonardi, Marcos Paulo Assunção, Maurício Gomes e Micael Dali |
