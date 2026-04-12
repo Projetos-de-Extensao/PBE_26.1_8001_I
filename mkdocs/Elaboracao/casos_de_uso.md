@@ -19,7 +19,7 @@ O diagrama a seguir apresenta a visão geral das funcionalidades do sistema.
 
 ## Diagrama de Casos de Uso
 
-```puml
+```plantuml
 @startuml
 left to right direction
 
