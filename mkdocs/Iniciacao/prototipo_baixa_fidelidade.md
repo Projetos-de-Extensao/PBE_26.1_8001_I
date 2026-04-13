@@ -227,22 +227,15 @@ O aluno demonstrou domínio na aplicação prática de...
 ## Conclusão
 
 <p align = "justify">
-A partir da elaboração do protótipo foi possível ter uma noção inicial da interface do usuário, definindo fluxo, paleta de cores, botões, app bars e diversas outras funcionalidades
+A partir da elaboração do protótipo foi possível ter uma noção inicial da interface do usuário, definindo telas, fluxo e algumas funcionalidades.
 </p>
 
 ## Referências
 
-> Material Design Color Tool. Disponível em: https://material.io/resources/color/#!/?view.left=0&view.right=0
-
-> PMI. Um guia do conhecimento em gerenciamento de projetos. Guia PMBOK® 5a. ed. EUA: Project Management Institute, 2013.
-
-> Ferramenta Figma. Disponível em https://www.figma.com
+> Ferramenta PlantUML para Criação de Prtotótipos. Disponível em https://plantuml.com/salt
 
 ## Autor(es)
 
 | Data     | Versão | Descrição                            | Autor(es)                                                                           |
 | -------- | ------ | ------------------------------------ | ----------------------------------------------------------------------------------- |
-| 07/09/20 | 1.0    | Criação do documento                 | Lucas Alexandre e Matheus Estanislau                                                |
-| 07/09/20 | 1.1    | Adicionado as imagens do protótipo   | Lucas Alexandre e Matheus Estanislau                                                |
-| 07/09/20 | 1.2    | Adicionado conclusão e referências   | Lucas Alexandre e Matheus Estanislau                                                |
-| 26/10/20 | 2.0    | Adicionada a versão 2.0 do protótipo | João Pedro, Lucas Alexandre, Matheus Estanislau, Moacir Mascarenha e Renan Cristyan |
+| 10/04/2026 | 1.0    | Criação de documento | Bruno Norton, Christian Werneck, Gianluca Leonardi, Marcos Paulo Assunção, Maurício Gomes e Micael Dali |
