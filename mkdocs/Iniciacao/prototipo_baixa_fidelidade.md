@@ -28,6 +28,8 @@ Este protótipo de baixa fidelidade descreve a experiência básica da aplicaç�
 - **Nova Solicitação**: formulário com seleção de curso/campus, checklist dinâmico e upload de documentos, além de links para modelos oficiais.
 - **Painel do Coordenador**: lista de solicitações pendentes, filtro por curso/status e resumo de workload.
 - **Detalhes da Solicitação**: painel de análise com score da IA, documentos enviados, comentários e ações de validação/assinatura.
+- **Assinatura Digital / Termo de Aceite**: tela onde alunos e coordenadores podem assinar e concordar com termos dos documentos recebidos por eles.
+- **Parecer Final do Coordenador**: onde o coordenador visualiza o relatório do aluno, a avaliação da empresa e o parecer do professor orientador e aprova ou não o aluno.
 
 ### PlantUML Salt - Login institucional
 
