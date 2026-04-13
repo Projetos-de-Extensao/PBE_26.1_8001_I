@@ -21,9 +21,9 @@ Os principais beneficiários do sistema seriam os coordenadores de curso, setore
 
 ## Escopo e Limites do Projeto
 
-O projeto consiste no desenvolvimento de um sistema para gerenciar o ciclo de vida do processo seletivo de monitores acadêmicos. O escopo do projeto abrange a criação e publicação de vagas por professores ou coordenadores, a submissão de candidaturas por parte dos alunos, incluindo envio de histórico escolar e pré-requisitos, e a triagem e avaliação feita pelos professores. O sistema também deverá gerar relatórios de classificação final e notificar os alunos sobre os resultados.
+O projeto consiste no desenvolvimento de um sistema dedicado à gestão e validação automatizada de documentos de estágio. O escopo abrange a submissão de contratos, planos de atividades e relatórios (parciais e finais) por parte dos alunos, a triagem inicial automatizada com base na Lei do Estágio (Lei nº 11.788/2008) e nas normativas institucionais, além da disponibilização de um painel para que coordenadores e avaliadores possam revisar, aprovar ou solicitar retificações com o apoio de relatórios de conformidade.
 
-Para manter o foco do projeto, o sistema não realizará a gestão financeira ou o pagamento de bolsas de monitoria. Além disso, o sistema não fará o controle de ponto, horas trabalhadas ou gestão das atividades diárias do monitor após sua aprovação, limitando-se estritamente à gestão das vagas e do processo seletivo.
+Para manter o foco da solução, o sistema não realizará a captação ou gestão de vagas de emprego, gestão financeira do pagamento de bolsas-auxílio, tampouco fará o controle de ponto ou acompanhamento da rotina diária do aluno na empresa concedente, limitando-se estritamente ao fluxo de submissão, análise legal e formalização documental do estágio.
 
 ## Análise de Aplicações e Mercado
 
