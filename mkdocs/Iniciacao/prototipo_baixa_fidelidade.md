@@ -177,7 +177,8 @@ title Detalhes da Solicitação - Coordenador
 @startsalt
 title Validação e Assinatura Digital
 
-{
+{+
+  {
 **Formalização de Documento**
 --
 **Arquivo:** Contrato_Estagio_Assinado_Empresa.pdf
@@ -193,6 +194,7 @@ title Validação e Assinatura Digital
 [Assinar Digitalmente]
 [<&circle-x>Cancelar]
 }
+}
 @endsalt
 ```
 
@@ -203,6 +205,7 @@ title Validação e Assinatura Digital
 title Parecer Técnico - Coordenador
 
 {
+  {+
 **Avaliação de Relatório de Estágio**
 --
 **Aluno:** Ana Silva (Sistemas de Informação)
@@ -222,6 +225,7 @@ O aluno demonstrou domínio na aplicação prática de...
 --
 [Registrar Parecer no Sistema]
 [<&circle-x>Cancelar]
+}
 }
 @endsalt
 ```
