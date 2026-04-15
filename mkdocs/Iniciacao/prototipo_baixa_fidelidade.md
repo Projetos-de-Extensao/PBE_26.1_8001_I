@@ -42,7 +42,7 @@ title Login - Sistema de Validação de Estágios
   --
   "Email institucional"
   "Senha"
-  "Entrar"
+  [Entrar]
   [Esqueceu a senha?]
   --
   [Aluno]
