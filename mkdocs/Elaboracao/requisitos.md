@@ -40,3 +40,9 @@ title: Requisitos
 * **Usabilidade:** A interface deve seguir princípios de design limpo e acessível, sendo plenamente responsiva para acesso via computadores e dispositivos móveis, facilitando a visualização de PDFs integrados.
 * **Confiabilidade:** O sistema deve manter um histórico imutável das validações e assinaturas, garantindo o respaldo jurídico da documentação aprovada.
 * **Disponibilidade:** O sistema deve estar operacional e escalável para suportar picos de acesso, especialmente durante os finais de semestre acadêmico, quando o volume de envio de relatórios é consideravelmente maior.
+
+## Autor(es)
+
+| Data     | Versão | Descrição            | Autor(es)                                                                                              |
+| -------- | ------ | -------------------- | ------------------------------------------------------------------------------------------------------ |
+| 01/04/26 | 1.0 | Criação do documento | Bruno Norton, Christian Werneck, Gianluca Leonardi, Marcos Paulo Assunção, Maurício Gomes, Micael Dali |
