@@ -1,87 +1,99 @@
 ---
-id: diagrama_de_casos de uso
-title: Diagrama de Casos de Uso
+id: diagrama_de_classes
+title: Diagrama de Classes
 ---
 
-## Casos de Uso
+# Diagrama de Classes
 
-### Descrição:
+## Introdução
 
-- Contas
-	- Criação
-	- Entrada
-	- Alteração
-	- Recuperar Senha
-	- Exclusão Lógica
-	- Visualização
+O diagrama de classes é o diagrama UML mais usado principalmente por servir como uma ponte entre os requisitos do sistema e a implementanção em código, devido à sua estrutura similar à usada nas principais linguagens de programação com suporte a Orientação a Objeto, como Python e Java.
 
-- Perfis
-	- Edição
-	- Pesquisar
-	- Visualização
-	- Seguir/Deixar de Seguir
+Além disso, o diagrama de classes funciona como uma representação visual geral de como o código do sistema vai ser implementado, como veremos no diagrama a seguir.
 
-- Postagens (Público) 	 	
-	- Criação
-	- Exclusão
-	- Interação
-	- Visualização
+---
 
-- Mensagens (Privado)
-	- Criação
-	- Exclusão
-	- Visualização
+## Mapeamento das Classes do Sistema
 
-- Galerias
-	- Albuns
-- Blogs
-- Grupos
+```plantuml
+@startuml
+abstract class Usuario {
+	+ nome: String
+	+ email: String
+	+ senhaInstitucional: String
+}
 
-### Criação de uma conta no sistema
+class Aluno extends Usuario {
+	+ matricula: String
+	+ realizarUpload(doc: Documento): void
+}
 
-* Atores:
+class Coordenador extends Usuario {
+	+ aprovar(solicitacao: SolicitacaoEstagio): void
+	+ rejeitar(solicitacao: SolicitacaoEstagio): void
+	+ solicitarRetificacao(solicitacao: SolicitacaoEstagio, motivo: String): void
+}
 
-	- Usuário
-	- Sistema
+class Professor extends Usuario {
+	+ registrarParecer(relatorio: Relatorio, parecer: ParecerTecnico): void
+}
 
-- Pré-Condições:
-	- Nenhuma
+class SolicitacaoEstagio {
+	+ id: int
+	+ data: Date
+	+ status: String
+}
 
-* Fluxo Básico:
-    1. Usuário fornece e-mail, senha e confirmações
-    2. Dados do Usuário são validados pelo Sistema
-    3. Dados do Usuário são encriptados pelo Sistema
-    4. Dados do Usuário são persistidos pelo Sistema
-    5. Sistema gera um link com prazo de expiração
-    6. Sistema envia e-mail de verificação, com o link, para o Usuário
-    7. Usuário confirma o e-mail antes do link expirar
-    8. Sistema confirma que o Cadastro do Usuário foi realizado com sucesso
-    9. Sistema redireciona o Usuário para a página de Entrada
+abstract class DocumentoEstagio {
+	+ id: int
+	+ dataEnvio: Date
+	+ scoreConformidade: float
+	+ status: String
+	+ realizarTriagemAutomatica(): void
+}
 
-- Fluxos Alternativos:
-	- 2a. E-mail do Usuário é inválido
-		2a1. Sistema exibe mensagem de erro
-	- 2b. Senha do Usuário não respeita regras de segurança
-		- 2b1. Sistema exibe mensagem de erro
-	- 3a. Usuário tenta confirmar o e-mail depois de o link expirar
-		- 3a1. Sistema sugere que o Usuário realize um novo Cadastro
+class Contrato extends DocumentoEstagio {}
 
-### Entrada do usuário no sistema
+class Apolice extends DocumentoEstagio {}
 
-- Atores:
-	- Usuário
-	- Sistema
+class Relatorio extends DocumentoEstagio {
+	+ conceitoFinal: String
+}
 
-- Pré-Condições:
-	Usuário deve estar cadastrado
+class ParecerTecnico {
+  + texto: String
+  + data: Date
+}
 
-- Fluxo Básico:
-    - 1. Usuário fornece e-mail e senha
-	- 2. Sistema autentica o Usuário
-	- 3. Sistema redireciona o Usuário para a página inicial
+class AssinaturaDigital {
+	+ dataHora: DateTime
+	+ ipAcesso: String
+	+ assinar(usuario: Usuario): void
+}
 
-- Fluxos Alternativos:
-	- 2a. Dados do Usuário Inválidos
-		- 2a1. Sistema exibe mensagem de erro
-	- 3a. Primeio acesso do Usuário
-		- 3a1. Sistema redireciona o Usuário para a página de edição de perfil
+class ModeloDocumento {
+	+ titulo: String
+	+ arquivoUrl: String
+	+ baixarModelo(): File
+}
+
+class Notificacao {
+	+ mensagem: String
+	+ dataEnvio: Date
+	+ enviar(usuario: Usuario):
+}
+
+
+Aluno "1" -- "*" Solicitacao : cria >
+Solicitacao "1" *-- "1..*" Documento : contem >
+Coordenador "1" -- "*" Solicitacao : avalia >
+Relatorio "1" -- "0..1" ParecerTecnico : possui >
+DocenteAvaliador "1" -- "*" ParecerTecnico : emite >
+AssinaturaDigital "*" -- "1" Documento : formaliza >
+Usuario "1" -- "*" AssinaturaDigital : realiza >
+Notificacao "*" -- "1" Usuario : notifica >
+
+@enduml
+```
+
+---

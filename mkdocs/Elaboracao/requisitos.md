@@ -3,7 +3,7 @@ id: Requisitos
 title: Requisitos
 ---
 
-# 06 - Levantamento de Requisitos e Caso de Uso
+# Levantamento de Requisitos e Caso de Uso
 
 **Sistema:** Sistema de Validação de Estágios
 
