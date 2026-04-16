@@ -97,3 +97,15 @@ Notificacao "*" -- "1" Usuario : notifica >
 ```
 
 ---
+
+## Conclusão
+
+Com o Diagrama de Classes pronto, a implementação dos modelos elaborados para descrever o funcionamento do sistema em código será muito mais fluida e direta, mantendo a estrtura de Orientação a Objetos e apenas traduzindo os detalhes de implementação para cada linguagem de programação.
+
+---
+
+## Autor(es)
+
+| Data     | Versão | Descrição            | Autor(es)                                                                                              |
+| -------- | ------ | -------------------- | ------------------------------------------------------------------------------------------------------ |
+| 01/04/26 | 1.0    | Criação do documento | Bruno Norton, Christian Werneck, Gianluca Leonardi, Marcos Paulo Assunção, Maurício Gomes, Micael Dali |

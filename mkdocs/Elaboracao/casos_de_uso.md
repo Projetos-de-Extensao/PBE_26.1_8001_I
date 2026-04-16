@@ -59,23 +59,27 @@ Coordenador --> UC12
 Coordenador --> UC7
 @enduml
 ```
+
 ---
 
 # Especificação dos Casos de Uso
 
 ## UC01 – Realizar Login
-**Atores:** Aluno, Coordenador  
-**Objetivo:** Permitir acesso seguro ao sistema via e-mail institucional.  
 
-**Pré-requisito:** O usuário deve possuir cadastro ativo com e-mail institucional válido.  
+**Atores:** Aluno, Coordenador  
+**Objetivo:** Permitir acesso seguro ao sistema via e-mail institucional.
+
+**Pré-requisito:** O usuário deve possuir cadastro ativo com e-mail institucional válido.
 
 **Fluxo principal:**
+
 1. O usuário acessa a tela inicial.
 2. Informa e-mail institucional e senha.
 3. O sistema valida as credenciais.
 4. O sistema redireciona para a interface correspondente ao perfil.
 
 **Fluxo alternativo:**
+
 - Caso as credenciais estejam inválidas, o sistema exibe mensagem de erro.
 
 **Pós-requisito:** O usuário permanece autenticado e direcionado ao painel correspondente ao seu perfil.
@@ -83,12 +87,14 @@ Coordenador --> UC7
 ---
 
 ## UC02 – Abrir Solicitação
+
 **Ator:** Aluno  
 **Objetivo:** Iniciar um novo processo de validação de estágio.
 
 **Pré-requisito:** O aluno deve estar autenticado no sistema.
 
 **Fluxo principal:**
+
 1. O aluno acessa a área de solicitações.
 2. Seleciona curso e campus.
 3. O sistema cria uma nova solicitação.
@@ -99,12 +105,14 @@ Coordenador --> UC7
 ---
 
 ## UC03 – Visualizar Checklist
+
 **Ator:** Aluno  
 **Objetivo:** Exibir a lista de documentos obrigatórios do curso.
 
 **Pré-requisito:** Deve existir uma solicitação aberta vinculada ao curso do aluno.
 
 **Fluxo principal:**
+
 1. O aluno seleciona a solicitação.
 2. O sistema consulta as regras do curso.
 3. O checklist é exibido.
@@ -114,12 +122,14 @@ Coordenador --> UC7
 ---
 
 ## UC04 – Baixar Modelos
+
 **Ator:** Aluno  
 **Objetivo:** Disponibilizar templates oficiais.
 
 **Pré-requisito:** O aluno deve possuir uma solicitação ativa.
 
 **Fluxo principal:**
+
 1. O aluno acessa a seção de modelos.
 2. Escolhe o documento desejado.
 3. O sistema realiza o download.
@@ -129,12 +139,14 @@ Coordenador --> UC7
 ---
 
 ## UC05 – Enviar Documentos
+
 **Ator:** Aluno  
 **Objetivo:** Submeter os arquivos necessários para análise.
 
 **Pré-requisito:** O aluno deve possuir todos os documentos exigidos no checklist.
 
 **Fluxo principal:**
+
 1. O aluno seleciona os arquivos.
 2. O sistema faz upload.
 3. A IA inicia a análise automática.
@@ -145,12 +157,14 @@ Coordenador --> UC7
 ---
 
 ## UC06 – Acompanhar Status
+
 **Ator:** Aluno  
 **Objetivo:** Consultar o progresso da solicitação.
 
 **Pré-requisito:** Deve existir ao menos uma solicitação registrada pelo aluno.
 
 **Fluxo principal:**
+
 1. O aluno acessa suas solicitações.
 2. O sistema exibe o status atual:
    - Em validação
@@ -163,12 +177,14 @@ Coordenador --> UC7
 ---
 
 ## UC07 – Receber Notificações
+
 **Atores:** Aluno, Coordenador  
 **Objetivo:** Informar mudanças relevantes no fluxo.
 
 **Pré-requisito:** O usuário deve estar vinculado a uma solicitação ou fluxo de validação.
 
 **Eventos de notificação:**
+
 - envio concluído
 - validação IA finalizada
 - solicitação aprovada
@@ -180,12 +196,14 @@ Coordenador --> UC7
 ---
 
 ## UC08 – Visualizar Solicitações
+
 **Ator:** Coordenador  
 **Objetivo:** Exibir solicitações do curso sob sua responsabilidade.
 
 **Pré-requisito:** O coordenador deve estar autenticado e vinculado a um curso.
 
 **Fluxo principal:**
+
 1. O coordenador acessa o painel.
 2. O sistema lista solicitações por curso.
 3. O coordenador seleciona uma solicitação.
@@ -195,12 +213,14 @@ Coordenador --> UC7
 ---
 
 ## UC09 – Analisar Score IA
+
 **Ator:** Coordenador  
 **Objetivo:** Consultar a análise automática realizada pela IA.
 
 **Pré-requisito:** A IA deve ter concluído a análise dos documentos enviados.
 
 **Fluxo principal:**
+
 1. O coordenador abre a solicitação.
 2. O sistema exibe:
    - score percentual
@@ -213,12 +233,14 @@ Coordenador --> UC7
 ---
 
 ## UC10 – Validar Manualmente
+
 **Ator:** Coordenador  
 **Objetivo:** Revisar e decidir sobre a aprovação final.
 
 **Pré-requisito:** O score e os comentários da IA devem estar disponíveis.
 
 **Fluxo principal:**
+
 1. O coordenador revisa a análise.
 2. Decide entre:
    - aprovar
@@ -230,12 +252,14 @@ Coordenador --> UC7
 ---
 
 ## UC11 – Assinar Documentos
+
 **Ator:** Coordenador  
 **Objetivo:** Formalizar a aprovação institucional.
 
 **Pré-requisito:** A solicitação deve ter sido aprovada manualmente.
 
 **Fluxo principal:**
+
 1. O coordenador aprova a solicitação.
 2. O sistema disponibiliza assinatura digital.
 3. O documento é assinado.
@@ -245,12 +269,14 @@ Coordenador --> UC7
 ---
 
 ## UC12 – Encaminhar para Reitoria
+
 **Ator:** Coordenador  
 **Objetivo:** Encaminhar documentos aprovados para assinatura final.
 
 **Pré-requisito:** O documento deve estar assinado pelo coordenador.
 
 **Fluxo principal:**
+
 1. Após assinatura do coordenador, o sistema envia à reitoria.
 2. O status é atualizado.
 3. O aluno recebe notificação.
@@ -260,11 +286,13 @@ Coordenador --> UC7
 ---
 
 ## Conclusão
+
 Os casos de uso descritos consolidam a visão funcional inicial da plataforma, servindo como base para modelagem UML, prototipação e implementação.
 
 ---
 
 ## Autor(es)
-| Data | Versão | Descrição | Autor(es) |
-| -- | -- | -- | -- |
-| 12/04/2026 | 1.0 | Criação do documento de casos de uso | Equipe do Projeto |
+
+| Data     | Versão | Descrição            | Autor(es)                                                                                              |
+| -------- | ------ | -------------------- | ------------------------------------------------------------------------------------------------------ |
+| 01/04/26 | 1.0    | Criação do documento | Bruno Norton, Christian Werneck, Gianluca Leonardi, Marcos Paulo Assunção, Maurício Gomes, Micael Dali |
