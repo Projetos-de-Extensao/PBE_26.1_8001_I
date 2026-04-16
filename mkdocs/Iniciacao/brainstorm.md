@@ -23,7 +23,7 @@ A equipe se reuniu para debater ideias gerais no 01/04/2026 sobre o projeto via 
 
 **Gianluca** - A plataforma deve fornecer uma validação automática dos documentos.
  
-**Bruno* - O principal objetivo da aplicação é facilitar validação de estagio para ambos os alunos e coordenadores, agilizando o processo.
+**Bruno** - O principal objetivo da aplicação é facilitar validação de estagio para ambos os alunos e coordenadores, agilizando o processo.
  
 ### 2. Como será o processo de envio de documentos?
  
