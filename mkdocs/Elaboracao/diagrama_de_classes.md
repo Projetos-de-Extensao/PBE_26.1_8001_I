@@ -18,78 +18,79 @@ Além disso, o diagrama de classes funciona como uma representação visual gera
 ```plantuml
 @startuml
 abstract class Usuario {
-	' + nome: String
-	' + email: String
-	' + senhaInstitucional: String
+	+ nome: String
+	+ email: String
+	+ senhaInstitucional: String
 }
 
 class Aluno extends Usuario {
-	' + matricula: String
-	' + realizarUpload(doc: Documento): void
+	+ matricula: String
+	+ realizarUpload(doc: Documento): void
 }
 
 class Coordenador extends Usuario {
-	' + aprovar(solicitacao: SolicitacaoEstagio): void
-	' + rejeitar(solicitacao: SolicitacaoEstagio): void
-	' + solicitarRetificacao(solicitacao: SolicitacaoEstagio, motivo: String): void
+	+ aprovar(solicitacao: SolicitacaoEstagio): void
+	+ rejeitar(solicitacao: SolicitacaoEstagio): void
+	+ solicitarRetificacao(solicitacao: SolicitacaoEstagio, motivo: String): void
 }
 
 class Professor extends Usuario {
-	' + registrarParecer(relatorio: Relatorio, parecer: ParecerTecnico): void
+	+ registrarParecer(relatorio: Relatorio, parecer: ParecerTecnico): void
 }
 
 class SolicitacaoEstagio {
-	' + id: int
-	' + data: Date
-	' + status: String
+	+ id: int
+	+ data: Date
+	+ status: String
 }
 
-abstract class DocumentoEstagio {
-	' + id: int
-	' + dataEnvio: Date
-	' + scoreConformidade: float
-	' + status: String
-	' + realizarTriagemAutomatica(): void
+abstract class DocumentoPreenchido {
+	+ id: int
+	+ dataEnvio: Date
+	+ scoreConformidade: float
+	+ status: String
+	+ realizarTriagemAutomatica(): void
 }
 
-class Contrato extends DocumentoEstagio {}
+class Contrato extends DocumentoPreenchido {}
 
-class Apolice extends DocumentoEstagio {}
+class Apolice extends DocumentoPreenchido {}
 
-class Relatorio extends DocumentoEstagio {
-	' + conceitoFinal: String
+class Relatorio extends DocumentoPreenchido {
+	+ conceitoFinal: String
 }
 
 class ParecerTecnico {
-'   + texto: String
-'   + data: Date
+	+ texto: String
+    + data: Date
 }
 
 class AssinaturaDigital {
-	' + dataHora: DateTime
-	' + ipAcesso: String
-	' + assinar(usuario: Usuario): void
+	+ dataHora: DateTime
+	+ ipAcesso: String
+	+ assinar(usuario: Usuario): void
 }
 
 class ModeloDocumento {
-	' + titulo: String
-	' + arquivoUrl: String
-	' + baixarModelo(): File
+	+ titulo: String
+	+ arquivoUrl: String
+	+ baixarModelo(): File
 }
 
 class Notificacao {
-	' + mensagem: String
-	' + dataEnvio: Date
-	' + enviar(usuario: Usuario):
+	+ mensagem: String
+	+ dataEnvio: Date
+	+ enviar(usuario: Usuario):
 }
 
 
-Aluno "1" -- "*" Solicitacao : cria >
-Solicitacao "1" *-- "1..*" Documento : contem >
-Coordenador "1" -- "*" Solicitacao : avalia >
+Aluno "1" -- "*" SolicitacaoEstagio : cria >
+Aluno "1" == "*" ModeloDocumento : preenche >
+SolicitacaoEstagio "1" *-- "1..*" DocumentoPreenchido : contem >
+Coordenador "1" -- "*" SolicitacaoEstagio : avalia >
 Relatorio "1" -- "0..1" ParecerTecnico : possui >
-DocenteAvaliador "1" -- "*" ParecerTecnico : emite >
-AssinaturaDigital "*" -- "1" Documento : formaliza >
+Professor "1" -- "*" ParecerTecnico : emite >
+AssinaturaDigital "*" -- "1" DocumentoPreenchido : formaliza >
 Usuario "1" -- "*" AssinaturaDigital : realiza >
 Notificacao "*" -- "1" Usuario : notifica >
 
