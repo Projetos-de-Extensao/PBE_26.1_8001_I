@@ -1,110 +1,117 @@
 "use client";
 
-import React, { useState } from 'react';
-import { 
-  Home, 
-  FileText, 
-  LogOut,
-  BookOpen,
-  Menu
-} from 'lucide-react';
-import { StudentDashboard } from '@/components/dashboard/StudentDashboard';
+import { useEffect, useState } from 'react';
+import { useRouter } from 'next/navigation';
+import { postToken, resolveUserRole, saveAuth, getStoredAuth } from '@/lib/api';
+import { StoredAuth } from '@/types/auth';
 
+export default function LoginPage() {
+  const router = useRouter();
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState<string | null>(null);
+  const [loading, setLoading] = useState(false);
 
+  useEffect(() => {
+    const stored = getStoredAuth();
+    if (stored?.accessToken && stored.role) {
+      const redirectUrl = getRedirectUrl(stored);
+      router.replace(redirectUrl);
+    }
+  }, [router]);
 
-export default function ValidadorEstagio() {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  function getRedirectUrl(auth: StoredAuth) {
+    if (auth.role === 'aluno') {
+      return '/aluno/dashboard';
+    }
+    if (auth.role === 'coordenador') {
+      return '/coordenador/painel';
+    }
+    if (auth.role === 'professor') {
+      return '/professor/turmas';
+    }
+    return '/';
+  }
+
+  async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    setError(null);
+    setLoading(true);
+
+    try {
+      const tokenPayload = await postToken(username, password);
+      const profile = await resolveUserRole(tokenPayload.access);
+
+      if (!profile.role || profile.profileId === null) {
+        throw new Error('Usuário sem perfil válido no backend.');
+      }
+
+      const auth: StoredAuth = {
+        accessToken: tokenPayload.access,
+        refreshToken: tokenPayload.refresh,
+        role: profile.role,
+        userId: profile.userId,
+        profileId: profile.profileId,
+      };
+
+      saveAuth(auth);
+      router.replace(getRedirectUrl(auth));
+    } catch (err) {
+      setError((err as Error).message);
+    } finally {
+      setLoading(false);
+    }
+  }
 
   return (
-    <div className="flex h-screen bg-[#f4f5f6] font-sans text-slate-800 overflow-hidden">
-      
-      {/* Overlay escuro para mobile quando o menu está aberto */}
-      {isSidebarOpen && (
-        <div 
-          className="fixed inset-0 bg-slate-900/50 z-40 md:hidden transition-opacity"
-          onClick={() => setIsSidebarOpen(false)}
-        />
-      )}
-
-      {/* Sidebar Lateral (Responsiva) */}
-      <aside className={`
-        fixed md:relative z-50 h-full w-20 bg-white border-r border-gray-200 flex flex-col items-center py-6 gap-8 shrink-0
-        transform transition-transform duration-300 ease-in-out
-        ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} md:translate-x-0
-      `}>
-        <img
-          src="/ibmec_icon.svg"
-          alt="Ibmec"
-          className="mb-4 h-10 w-10 object-contain"
-        />
-        <nav className="flex flex-col gap-6 w-full">
-          <button className="flex justify-center p-3 mx-2 bg-blue-50 text-blue-900 rounded-lg">
-            <Home size={24} />
-          </button>
-          <button className="flex justify-center p-3 mx-2 text-gray-400 hover:text-[#041e3a] transition-colors">
-            <BookOpen size={24} />
-          </button>
-          <button className="flex justify-center p-3 mx-2 text-gray-400 hover:text-[#041e3a] transition-colors">
-            <FileText size={24} />
-          </button>
-        </nav>
-        <button className="mt-auto flex justify-center p-3 text-gray-400 hover:text-red-600 transition-colors">
-          <LogOut size={24} />
-        </button>
-      </aside>
-
-      {/* Conteúdo Principal */}
-      <main className="flex-1 overflow-y-auto w-full relative">
-        
-        {/* Header Superior */}
-        <header className="bg-white border-b border-gray-200 h-16 flex items-center justify-between px-4 md:px-8">
-          <div className="flex items-center gap-3 md:gap-4">
-            {/* Ícone Menu Hambúrguer (Mobile) */}
-            <button 
-              className="md:hidden p-2 -ml-2 text-gray-600 hover:bg-gray-100 rounded-lg transition-colors"
-              onClick={() => setIsSidebarOpen(true)}
-            >
-              <Menu size={24} />
-            </button>
-            
-            <img
-              src="/logo-Ibmec.svg"
-              alt="Ibmec"
-              className="h-6 md:h-8 w-auto object-contain"
-            />
-            <span className="hidden sm:inline text-gray-300">|</span>
-            <span className="hidden sm:inline text-xs md:text-sm font-medium text-gray-600">
-              Sistema de Validação de Estágios
-            </span>
-          </div>
-          <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-full bg-slate-800 text-white flex items-center justify-center text-sm font-bold shrink-0">
-              MF
-            </div>
-            <span className="hidden sm:inline text-sm font-medium">Mauricio Filho</span>
-          </div>
-        </header>
-
-        {/* Container Principal */}
-        <div className="p-4 md:p-8 max-w-6xl mx-auto">
-          
-          {/* Banner Principal */}
-          <section className="bg-[#041e3a] rounded-xl p-6 md:p-8 text-white flex flex-col md:flex-row justify-between items-start md:items-center shadow-lg mb-6">
-            <div className="space-y-2">
-              <p className="text-xs md:text-sm text-blue-200 font-medium tracking-wide uppercase">
-                Área do Aluno • Lei nº 11.788/2008
-              </p>
-              <h2 className="text-2xl md:text-3xl font-semibold">Gerenciamento do TCE</h2>
-              <p className="text-sm md:text-base text-blue-100 max-w-xl">
-                Gerencie sua aplicação de estágio, acompanhe o status do seu TCE e envie documentos de acompanhamento.
-              </p>
-            </div>
-          </section>
-
-          <StudentDashboard />
-
+    <main className="flex min-h-screen items-center justify-center bg-[#f4f5f6] px-4 py-10 text-slate-900">
+      <div className="w-full max-w-md rounded-3xl border border-gray-200 bg-white p-8 shadow-xl">
+        <div className="mb-8 text-center">
+          <img src="/logo-Ibmec.svg" alt="Ibmec" className="mx-auto mb-4 h-12 w-auto object-contain" />
+          <h1 className="text-3xl font-semibold text-[#041e3a]">Acesso ao Sistema</h1>
+          <p className="mt-2 text-sm text-gray-500">Faça login com as credenciais do seu usuário.</p>
         </div>
-      </main>
-    </div>
+
+        <form className="space-y-5" onSubmit={handleSubmit}>
+          <div>
+            <label htmlFor="username" className="mb-2 block text-sm font-medium text-slate-700">
+              Usuário
+            </label>
+            <input
+              id="username"
+              type="text"
+              value={username}
+              onChange={(event) => setUsername(event.target.value)}
+              className="w-full rounded-3xl border border-gray-300 bg-white px-4 py-3 text-sm outline-none transition focus:border-[#041e3a]"
+              required
+            />
+          </div>
+
+          <div>
+            <label htmlFor="password" className="mb-2 block text-sm font-medium text-slate-700">
+              Senha
+            </label>
+            <input
+              id="password"
+              type="password"
+              value={password}
+              onChange={(event) => setPassword(event.target.value)}
+              className="w-full rounded-3xl border border-gray-300 bg-white px-4 py-3 text-sm outline-none transition focus:border-[#041e3a]"
+              required
+            />
+          </div>
+
+          {error && <p className="text-sm text-red-600">{error}</p>}
+
+          <button
+            type="submit"
+            disabled={loading}
+            className="w-full rounded-3xl bg-[#041e3a] px-4 py-3 text-sm font-semibold text-white transition hover:bg-slate-900 disabled:cursor-not-allowed disabled:opacity-70"
+          >
+            {loading ? 'Entrando...' : 'Entrar'}
+          </button>
+        </form>
+      </div>
+    </main>
   );
 }
